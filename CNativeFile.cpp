@@ -13,8 +13,7 @@ CNativeFile::~CNativeFile()
 
 BOOL CNativeFile::Init()
 {
-	//Dynamically load ntdll.dll and find out the addresses of
-	//NtCreateFile and RtlInitUnicodeString
+	//Dynamically load ntdll.dll and find out the addresses of exported functions
 	if ( bInitialized )
 		return TRUE;
 
